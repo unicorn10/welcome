@@ -29,9 +29,22 @@
                           <block type="robot_delay" id="269" inline="true">
                             <value name="DELAY">
                               <block type="math_number" id="276">
-                                <field name="NUM">5300</field>
+                                <field name="NUM">5000</field>
                               </block>
                             </value>
+                            <next>
+                              <block type="movement_right" id="291">
+                                <next>
+                                  <block type="robot_delay" id="292" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="293">
+                                        <field name="NUM">300</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
