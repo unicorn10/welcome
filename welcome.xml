@@ -1,45 +1,54 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="84" x="103" y="83">
-    <next>
-      <block type="robot_delay" id="170" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="207">
-            <field name="NUM">5000</field>
-          </block>
-        </value>
+  <block type="controls_repeat" id="310" inline="true" x="58" y="51">
+    <value name="TIMES">
+      <block type="math_number" id="317">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="84">
         <next>
-          <block type="movement_forward" id="243">
+          <block type="robot_delay" id="170" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="207">
+                <field name="NUM">5000</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="244" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="245">
-                    <field name="NUM">5000</field>
-                  </block>
-                </value>
+              <block type="movement_forward" id="243">
                 <next>
-                  <block type="movement_right" id="255">
-                    <next>
-                      <block type="robot_delay" id="269" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="276">
-                            <field name="NUM">5000</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="movement_right" id="291">
-                            <next>
-                              <block type="robot_delay" id="292" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="293">
-                                    <field name="NUM">550</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
+                  <block type="robot_delay" id="244" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="245">
+                        <field name="NUM">5000</field>
                       </block>
-                    </next>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <next>
+      <block type="movement_right" id="255">
+        <next>
+          <block type="robot_delay" id="269" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="276">
+                <field name="NUM">5000</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_right" id="291">
+                <next>
+                  <block type="robot_delay" id="292" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="293">
+                        <field name="NUM">600</field>
+                      </block>
+                    </value>
                   </block>
                 </next>
               </block>
